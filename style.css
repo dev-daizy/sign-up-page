@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 180% 180%;
+    animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.outerbox{
+    width: 100vw;
+    height: 100vh;
+    font-family: monospace;
+    font: 300;
+    /* background: rgb(131,58,180);
+    background: linear-gradient(195deg, rgba(131,58,180,1) 0%, rgba(231,31,31,1) 73%, rgba(252,176,69,1) 100%); */
+}
+.innerbox {
+    border: 2px solid black;
+   width: 400px;
+   margin :0 auto;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   /* background-color: rgb(255, 255, 255); */
+   background: transparent;
+text-align: center;
+backdrop-filter: blur(500px);
+/* background: transparent; */
+padding: 20px 50px;
+box-shadow: 3px 3px 7px;
+border-radius: 10px;
+}
+.signupheader{
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.signupbody{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.signupbody p {
+    margin: 10px;
+}
+.signupbody p label{
+    display: block;
+}
+.signupbody p input{
+    width: 100%;
+    height: 30px;
+    border: 1.5px solid rgb(26, 25, 25);
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.signupbody p input[type="button"]{
+    width: 45%;
+    text-align:center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: monospace;
+    color: #080101;
+    background-color: hsl(143, 87%, 57%);
+    border: none;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .4s;
+/* border: 1px solid black; */
+
+}
+.signupbody p input[type="button"]:hover{
+    /* width: 75%; */
+    transform: scale(1.3);
+    background-color: hsl(143, 100%, 50%);
+/* border: 1px solid black; */
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+.signupfooter p{
+    text-align: center;
+margin-bottom: 5px;
+font-size: 0.9rem;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.signupfooter p a{
+    font-family:monospace;
+    color: #ffffff;
+}
