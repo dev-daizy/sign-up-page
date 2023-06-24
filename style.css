@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+/*     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 180% 180%;
-    animation: gradient 12s ease infinite;
+    animation: gradient 12s ease infinite; */
+    background-image:url("C:\Users\91836\Downloads\pexels-simon-berger-1323550.jpg"
 }
 
-@keyframes gradient {
+/* @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
@@ -19,7 +20,7 @@ body {
     100% {
         background-position: 0% 50%;
     }
-}
+} */
 .outerbox{
     width: 100vw;
     height: 100vh;
